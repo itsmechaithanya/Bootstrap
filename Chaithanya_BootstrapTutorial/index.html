@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaithanya | Studio & Bootstrap Tutorial</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk (Static non-variable weights) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Sticky Top Custom Glassmorphic Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-box">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
+        <span>Chaithanya</span>
+        <span class="brand-badge">Studio</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subpages/cards.html">Cards & Modal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subpages/components.html">Interactive Components</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gridDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Grid Challenges
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="gridDropdown">
+              <li><a class="dropdown-item" href="gridChallenges/grid1.html"><i class="bi bi-1-circle me-2 text-danger"></i>Grid Challenge 1 (Fixed)</a></li>
+              <li><a class="dropdown-item" href="gridChallenges/grid2.html"><i class="bi bi-2-circle me-2 text-info"></i>Grid Challenge 2 (Collapse)</a></li>
+              <li><a class="dropdown-item" href="gridChallenges/grid3.html"><i class="bi bi-3-circle me-2 text-success"></i>Grid Challenge 3 (Responsive Hide)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      
+      <!-- Editorial Hero Showcase Section -->
+      <section class="hero-wrapper">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="hero-tag">
+              <span class="dot"></span>
+              <span>Chaithanya Digital Lab • 2026 Edition</span>
+            </div>
+            <h1 class="hero-title">
+              Artisan Roast Architecture & Culinary Dynamics
+            </h1>
+            <p class="hero-description">
+              A bespoke digital showcase combining modern responsive Bootstrap 5 foundations, high-contrast editorial typography, and kinetic micro-interactions.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="subpages/cards.html" class="btn btn-custom-primary">
+                <i class="bi bi-grid-fill"></i> Explore Roast Cards
+              </a>
+              <a href="gridChallenges/grid1.html" class="btn btn-custom-secondary">
+                <i class="bi bi-columns-gap"></i> Grid Challenges
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-img-card">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Artisan Coffee Roasting Experience">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Title & Subheading -->
+      <div class="editorial-title-box text-center text-md-start">
+        <span class="text-uppercase small fw-bold tracking-wider" style="color: var(--primary); letter-spacing: 0.1em;">Chapter 01 // Extraction Theory</span>
+        <h2 class="section-h2 d-block mt-2">Thermal Kinetics of Single-Origin Roasting</h2>
+        <p class="text-secondary" style="max-width: 650px;">
+          Explore our coffee lorem ipsum narrative analyzing the intersection of altitude, bean density, and precision convection heat curves.
+        </p>
+      </div>
+
+      <!-- Responsive Two-Column Layout (At least 2 columns of text that behave responsively) -->
+      <section class="mb-5">
+        <div class="row g-4 align-items-stretch">
+          
+          <!-- Column 1 -->
+          <div class="col-12 col-lg-6">
+            <div class="glass-panel h-100">
+              <div class="icon-cube purple">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
+              <h3 class="h4 text-white fw-bold mb-3">Micro-Lot First Crack Dynamics</h3>
+              <p class="text-secondary mb-3">
+                Coffee ipsum dolor sit amet, barista grinder robusta arabica, viennese dripper cortado caramelization aroma roast siphon. Affogato, extraction steamed froth crema percolator chicory turkish single shot. Cultivar grounds frappuccino mazagran siphon iced plunger acerbic macchiato variety extraction.
+              </p>
+              <p class="text-secondary mb-4">
+                Fair trade grinder plunger turkish, filter skinny macchiato seasonal dripper mocha body spoon cortado. Qui cortado, crema cultivar beans roast redeye brewed mug affogato viennese barista aroma foam.
+              </p>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary border-opacity-25">
+                <span class="small text-white-50"><i class="bi bi-thermometer-sun me-1 text-warning"></i> End Temp: 208°C</span>
+                <span class="badge bg-dark border border-secondary border-opacity-25 text-white">Roast Grade: AA+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-12 col-lg-6">
+            <div class="glass-panel h-100">
+              <div class="icon-cube cyan">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <h3 class="h4 text-white fw-bold mb-3">Terroir Chemistry & Solubles</h3>
+              <p class="text-secondary mb-3">
+                Single origin espresso macchiato roast lungo body carajillo roast caffeine crema saucer bar organic. Dark robusta roast aroma breve pumpkin spice siphon crema whipped to go con panna turkish viennese. Sweet shop caramelization french press instant spoon percolator filter organic arabica beans.
+              </p>
+              <p class="text-secondary mb-4">
+                Kona redeye grounds, plunger whipped barista affogato irish foam flavour extraction cinnamon. Robust pumpkin spice dripper frappuccino mug viennese aromatic extraction robusta dark rich body cup.
+              </p>
+              <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary border-opacity-25">
+                <span class="small text-white-50"><i class="bi bi-geo-alt me-1 text-info"></i> Elevation: 2,100m ASL</span>
+                <span class="badge bg-dark border border-secondary border-opacity-25 text-white">TDS: 1.38%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Quick Exploration Matrix -->
+      <section class="p-4 p-md-5 glass-panel rounded-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h3 class="text-white fw-bold mb-2">Project Navigation Index</h3>
+            <p class="text-secondary mb-0">
+              This Bootstrap showcase contains 6 meticulously designed responsive pages: Home, Responsive Cards with Modal triggers, Interactive Bootstrap Components, and the 3 distinct Grid Challenge proofs.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="subpages/components.html" class="btn btn-custom-accent">
+              <i class="bi bi-arrow-right-circle me-1"></i> Interactive Components
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Consistent Custom Footer -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <h5><i class="bi bi-code-slash text-primary me-2"></i>Chaithanya | Web Architecture</h5>
+          <p class="mb-0" style="max-width: 420px;">
+            A premier Bootstrap 5 showcase project engineered with custom glassmorphism, responsive grid breakpoints, and interactive modal dialogs.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Overview (Index)</a></li>
+            <li class="mb-2"><a href="subpages/cards.html">Cards & Modal</a></li>
+            <li class="mb-2"><a href="subpages/components.html">Interactive Components</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Grid Challenges</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="gridChallenges/grid1.html">Grid Challenge 1 (Fixed)</a></li>
+            <li class="mb-2"><a href="gridChallenges/grid2.html">Grid Challenge 2 (Collapse)</a></li>
+            <li class="mb-2"><a href="gridChallenges/grid3.html">Grid Challenge 3 (Responsive Hide)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Chaithanya. All Rights Reserved. | Built with Bootstrap 5 & Custom CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

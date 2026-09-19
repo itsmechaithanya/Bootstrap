@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards & Modals | Chaithanya Studio</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Sticky Top Custom Glassmorphic Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <div class="brand-icon-box">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
+        <span>Chaithanya</span>
+        <span class="brand-badge">Studio</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cards.html">Cards & Modal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="components.html">Interactive Components</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gridDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Grid Challenges
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="gridDropdown">
+              <li><a class="dropdown-item" href="../gridChallenges/grid1.html"><i class="bi bi-1-circle me-2 text-danger"></i>Grid Challenge 1 (Fixed)</a></li>
+              <li><a class="dropdown-item" href="../gridChallenges/grid2.html"><i class="bi bi-2-circle me-2 text-info"></i>Grid Challenge 2 (Collapse)</a></li>
+              <li><a class="dropdown-item" href="../gridChallenges/grid3.html"><i class="bi bi-3-circle me-2 text-success"></i>Grid Challenge 3 (Responsive Hide)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      
+      <!-- Page Header with H1 and descriptive text -->
+      <div class="text-center mb-5">
+        <div class="hero-tag mx-auto">
+          <span class="dot"></span>
+          <span>Curated Lot Selections</span>
+        </div>
+        <h1 class="hero-title text-center mb-3">Single-Origin Roast Portfolio</h1>
+        <p class="hero-description text-center mx-auto" style="max-width: 720px;">
+          Explore responsive micro-lot cards featuring image zoom transitions, customized buttons with reactive hover states, and interactive Bootstrap modal cupping sheets.
+        </p>
+      </div>
+
+      <!-- Responsive Multi-Card Grid (Row-cols: 1 on mobile, 2 on tablet, 3 on desktop) -->
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
+        
+        <!-- Card 1: Light Roast (With Modal Trigger) -->
+        <div class="col">
+          <div class="custom-card">
+            <div class="img-wrapper">
+              <span class="card-badge-floating"><i class="bi bi-fire text-danger me-1"></i>Light Roast</span>
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pour Over Coffee Dripper">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-info small fw-semibold"><i class="bi bi-geo-alt-fill me-1"></i>Yirgacheffe, Ethiopia</span>
+                <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.95</span>
+              </div>
+              <h5 class="card-title">Ethiopia Aricha Washed G1</h5>
+              <p class="card-text">
+                Barista roast extraction filter drip cortado single origin aroma cultivar. Delicate honeysuckle blossoms, Meyer lemon zest, and silky bergamot finish.
+              </p>
+              <div class="d-grid mt-auto">
+                <button type="button" class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#cuppingNotesModal">
+                  <i class="bi bi-eye-fill"></i> View Cupping Notes (Modal)
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Medium Roast (With Order Modal Trigger) -->
+        <div class="col">
+          <div class="custom-card">
+            <div class="img-wrapper">
+              <span class="card-badge-floating"><i class="bi bi-stars text-warning me-1"></i>Medium Roast</span>
+              <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Whole Bean Roasted Coffee">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-info small fw-semibold"><i class="bi bi-geo-alt-fill me-1"></i>Huila, Colombia</span>
+                <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.88</span>
+              </div>
+              <h5 class="card-title">Colombia Pink Bourbon Estate</h5>
+              <p class="card-text">
+                Caramelization body espresso rich pumpkin spice cinnamon redeye brewed aroma. Cane sugar sweetness, ripe red papaya acidity, and chocolate truffles.
+              </p>
+              <div class="d-grid mt-auto">
+                <button type="button" class="btn btn-custom-accent" data-bs-toggle="modal" data-bs-target="#orderModal">
+                  <i class="bi bi-bag-plus-fill"></i> Reserve Batch (Modal)
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Dark Roast (With Info Modal) -->
+        <div class="col">
+          <div class="custom-card">
+            <div class="img-wrapper">
+              <span class="card-badge-floating"><i class="bi bi-moon-stars-fill text-info me-1"></i>Dark Roast</span>
+              <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Espresso Crema Machine">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-info small fw-semibold"><i class="bi bi-geo-alt-fill me-1"></i>Aceh, Sumatra</span>
+                <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.79</span>
+              </div>
+              <h5 class="card-title">Sumatra Mandheling Triple-Pick</h5>
+              <p class="card-text">
+                Robusta roast dark froth crema affogato french press cortado viennese grounds beans. Heavy syrupy mouthfeel, dark cedar spices, and toasted almond nuances.
+              </p>
+              <div class="d-grid mt-auto">
+                <button type="button" class="btn btn-custom-secondary" data-bs-toggle="modal" data-bs-target="#cuppingNotesModal">
+                  <i class="bi bi-sliders"></i> Technical Specs
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Informational Rule Box -->
+      <div class="grid-rule-box">
+        <h4 class="fw-bold mb-2"><i class="bi bi-phone text-primary me-2"></i>Responsive Grid Adaptability</h4>
+        <p class="mb-0 text-secondary">
+          These luxury cards utilize <code>row-cols-1 row-cols-md-2 row-cols-lg-3</code> to automatically adapt layout density: full-width on mobile screens, 2-column grid on tablets, and 3-column split on desktop viewports.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modal 1: Cupping Notes Dialog -->
+  <div class="modal fade" id="cuppingNotesModal" tabindex="-1" aria-labelledby="cuppingNotesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuppingNotesModalLabel">
+            <i class="bi bi-cup-hot-fill text-warning me-2"></i>Cupping Sheet & Extraction Parameters
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex align-items-center gap-3 mb-4 p-3 rounded-3 bg-dark border border-secondary border-opacity-25">
+            <div class="brand-icon-box" style="width: 44px; height: 44px; font-size: 1.2rem;">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div>
+              <h6 class="text-white fw-bold mb-0">SCA Certified Lot #ET-2026-YRG</h6>
+              <span class="text-info small">Cupping Score: <strong>89.75 / 100 Specialty</strong></span>
+            </div>
+          </div>
+
+          <div class="row g-2 mb-4">
+            <div class="col-6">
+              <div class="p-3 rounded-3 bg-dark border border-secondary border-opacity-25">
+                <span class="text-secondary small d-block mb-1">Process</span>
+                <span class="text-white fw-bold">Fully Washed (36h)</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 rounded-3 bg-dark border border-secondary border-opacity-25">
+                <span class="text-secondary small d-block mb-1">Water Temp</span>
+                <span class="text-white fw-bold">93.5°C (200.3°F)</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-secondary small mb-0">
+            Coffee ipsum dolor sit amet, barista grinder robusta arabica, viennese dripper cortado caramelization aroma roast siphon. Affogato, extraction steamed froth crema percolator chicory turkish single shot.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-custom-primary" data-bs-dismiss="modal">Save Cupping Notes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Reserve Batch Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">
+            <i class="bi bi-bag-check-fill text-info me-2"></i>Reserve Custom Roast Batch
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-secondary small mb-4">Select your tailored grind profile for small-batch drum roasting:</p>
+          <form>
+            <div class="mb-3">
+              <label for="grindSelect" class="form-label text-white fw-semibold small">Grind Calibration</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50" id="grindSelect">
+                <option selected>Whole Bean (Recommended for Freshness)</option>
+                <option>Coarse (French Press / Cold Brew)</option>
+                <option>Medium-Fine (Hario V60 / Kalita)</option>
+                <option>Fine (Espresso / 9-Bar Machine)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="packageSize" class="form-label text-white fw-semibold small">Package Volume</label>
+              <select class="form-select bg-dark text-white border-secondary border-opacity-50" id="packageSize">
+                <option>250g Discovery Tin - $16.50</option>
+                <option selected>500g Roaster Bag - $28.00</option>
+                <option>1000g Barista Reserve - $52.00</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom-secondary" data-bs-dismiss="modal">Dismiss</button>
+          <button type="button" class="btn btn-custom-accent" data-bs-dismiss="modal">Confirm Reservation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consistent Custom Footer -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <h5><i class="bi bi-code-slash text-primary me-2"></i>Chaithanya | Web Architecture</h5>
+          <p class="mb-0" style="max-width: 420px;">
+            A premier Bootstrap 5 showcase project engineered with custom glassmorphism, responsive grid breakpoints, and interactive modal dialogs.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="../index.html">Overview (Index)</a></li>
+            <li class="mb-2"><a href="cards.html">Cards & Modal</a></li>
+            <li class="mb-2"><a href="components.html">Interactive Components</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Grid Challenges</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="../gridChallenges/grid1.html">Grid Challenge 1 (Fixed)</a></li>
+            <li class="mb-2"><a href="../gridChallenges/grid2.html">Grid Challenge 2 (Collapse)</a></li>
+            <li class="mb-2"><a href="../gridChallenges/grid3.html">Grid Challenge 3 (Responsive Hide)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Chaithanya. All Rights Reserved. | Built with Bootstrap 5 & Custom CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
