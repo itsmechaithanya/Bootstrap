@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Chaithanya_BootstrapTutorial/index.html"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/Chaithanya_BootstrapTutorial/index.html"
+    },
+    {
+      "source": "/css/(.*)",
+      "destination": "/Chaithanya_BootstrapTutorial/css/$1"
+    },
+    {
+      "source": "/images/(.*)",
+      "destination": "/Chaithanya_BootstrapTutorial/images/$1"
+    },
+    {
+      "source": "/subpages/(.*)",
+      "destination": "/Chaithanya_BootstrapTutorial/subpages/$1"
+    },
+    {
+      "source": "/gridChallenges/(.*)",
+      "destination": "/Chaithanya_BootstrapTutorial/gridChallenges/$1"
+    }
+  ]
+}
